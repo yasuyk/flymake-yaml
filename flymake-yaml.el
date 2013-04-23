@@ -51,7 +51,7 @@
   "Construct a command that flymake can use to check yaml source.
 Argument FILENAME
     YAML file name."
-  (list "emacs-yaml-syntax-check" filename))
+  (list flymake-yaml-command-path filename))
 
 ;;;###autoload
 (defun flymake-yaml-load ()
