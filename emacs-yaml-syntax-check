@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "yaml"
+
+begin
+  YAML.load(ARGF)
+rescue Exception => error
+  warn error.message
+end
