@@ -57,10 +57,11 @@ Argument FILENAME
 (defun flymake-yaml-load ()
   "Configure flymake mode to check the current buffer's YAML syntax."
   (interactive)
-  (flymake-easy-load 'flymake-yaml-command
-                     flymake-yaml-err-line-patterns
-                    'tempdir
-                     "yml"))
+  (when (eq major-mode 'yaml-mode)
+    (flymake-easy-load 'flymake-yaml-command
+                       flymake-yaml-err-line-patterns
+                       'tempdir
+                       "yml")))
 
 ;;;###autoload
 (add-to-list 'yaml-mode-hook 'flymake-yaml-load)
