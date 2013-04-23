@@ -15,9 +15,9 @@ directory containing `flymake-yaml.el` to your `load-path`, and then
 
 ## Usage
 
-Add the following to your emacs init file (Not necessary if using ELPA package):
+Add the following to your emacs init file:
 
-    (require 'flymake-yaml)
+    (require 'flymake-yaml) ;; Not necessary if using ELPA package
     (add-hook 'yaml-mode-hook 'flymake-yaml-load)
 
 

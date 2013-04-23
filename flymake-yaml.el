@@ -26,8 +26,8 @@
 ;; Based in part on http://d.hatena.ne.jp/kitokitoki/20120306/p1
 ;;
 ;; Usage:
-;;   ;; If using ELPA package, the following configuration is not necessary
-;;   (require 'flymake-yaml)
+;;
+;;   (require 'flymake-yaml) ;; Not necessary if using ELPA package
 ;;   (add-hook 'yaml-mode-hook 'flymake-yaml-load)
 ;;
 ;; Uses flymake-easy, from https://github.com/purcell/flymake-easy
@@ -37,7 +37,7 @@
 (require 'flymake-easy)
 
 (defconst flymake-yaml-err-line-patterns
-   ;; Syck error message
+  ;; Syck error message
   '(("syntax error on line \\([0-9]+\\), col \\([0-9]+\\): `\\(.*\\)'" nil 1 2 3)
     ;; Psych error message
     (".*: \\(.*\\) at line \\([0-9]+\\) column \\([0-9]+\\)" nil 2 3 1)))
@@ -62,9 +62,6 @@ Argument FILENAME
                        flymake-yaml-err-line-patterns
                        'tempdir
                        "yml")))
-
-;;;###autoload
-(add-hook 'yaml-mode-hook 'flymake-yaml-load)
 
 (provide 'flymake-yaml)
 
