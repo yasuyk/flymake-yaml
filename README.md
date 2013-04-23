@@ -1,7 +1,7 @@
 # flymake-yaml.el
 
 An Emacs flymake handler for syntax-checking YAML source code
-using [`Psych`](https://github.com/tenderlove/psych) or `Syck`(Ruby 1.8 standard library).
+using [`Psych`](https://github.com/tenderlove/psych) or `Syck`(Ruby 1.8/1.9 standard library).
 
 Based in part on [http://d.hatena.ne.jp/kitokitoki/20120306/p1](http://d.hatena.ne.jp/kitokitoki/20120306/p1).
 
