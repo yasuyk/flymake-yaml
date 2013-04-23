@@ -3,7 +3,7 @@
 ;; Copyright (C) 2013 Yasuyuki Oka
 
 ;; Author: Yasuyuki Oka <yasuyk@gmail.com>
-;; Version: 0.0.1
+;; Version: 0.0.2
 ;; URL: https://github.com/yasuyk/flymake-yaml
 ;; Package-Requires: ((flymake-easy "0.1"))
 ;; Keywords: yaml
