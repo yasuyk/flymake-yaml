@@ -42,16 +42,11 @@
     ;; Psych error message
     (".*: \\(.*\\) at line \\([0-9]+\\) column \\([0-9]+\\)" nil 2 3 1)))
 
-(defconst flymake-yaml-command-path
-  (expand-file-name (concat
-                     (file-name-directory load-file-name)
-                     "emacs-yaml-syntax-check")))
-
 (defun flymake-yaml-command (filename)
   "Construct a command that flymake can use to check yaml source.
 Argument FILENAME
     YAML file name."
-  (list flymake-yaml-command-path filename))
+  (list "ruby" "-ryaml" "-e" "YAML.load(ARGF) rescue warn $!" filename))
 
 ;;;###autoload
 (defun flymake-yaml-load ()
