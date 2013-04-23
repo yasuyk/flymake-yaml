@@ -64,7 +64,7 @@ Argument FILENAME
                        "yml")))
 
 ;;;###autoload
-(add-to-list 'yaml-mode-hook 'flymake-yaml-load)
+(add-hook 'yaml-mode-hook 'flymake-yaml-load)
 
 (provide 'flymake-yaml)
 
