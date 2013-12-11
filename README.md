@@ -5,6 +5,8 @@ using [`Psych`](https://github.com/tenderlove/psych) or `Syck`(Ruby 1.8/1.9 stan
 
 Based in part on [http://d.hatena.ne.jp/kitokitoki/20120306/p1](http://d.hatena.ne.jp/kitokitoki/20120306/p1).
 
+These days you might be better served by [flycheck](https://github.com/flycheck/flycheck).
+
 ## Installation
 
 If you choose not to use one of the convenient packages in
